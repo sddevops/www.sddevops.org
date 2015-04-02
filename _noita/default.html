@@ -1,0 +1,83 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html dir="ltr" lang="{{ site.noita.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  {% include noita/robots.html %}
+  {% include noita/meta-description.html %}
+
+  {% for favicon in site.noita.favicons %}
+    {% assign size = favicon | split: '-' | last | split: '.' | first %}
+    <link rel="icon"
+      sizes="{{ size }}x{{ size }}"
+      href="{{ favicon }}">
+    <link rel="apple-touch-icon"
+      sizes="{{ size }}x{{ size }}"
+      href="{{ favicon }}">
+  {% endfor %}
+
+  <link rel="alternate" href="/blog/feed.atom"
+    title="{{ site.noita.name }}" type="application/atom+xml">
+
+  <link rel="stylesheet" href="/noita/app.css">
+  <script src="/noita/js/vendor/modernizr.js"></script>
+</head>
+<body>
+      
+<section class="homepage-hero">
+	<div class="row">   
+	 	<div class="medium-7 large-6 columns">
+			<br>
+			<h1 class="right">{{ page.title }}</h1><br>
+			<h3 class="right">{{ page.subtitle }}</h3>
+			<br>
+		</div>
+	<div class="medium-5 large-6 columns">
+		<img src="http://photos4.meetupstatic.com/photos/event/c/5/6/3/global_435410531.jpeg"  style="width: 70%;">
+		</div>
+	</div>
+</section>
+     
+
+  <div class="top-bar data-topbar" id="topbar">
+  
+    <div class="top-bar-section">
+
+      {% if site.noita.topbar.left %}
+      <ul class="left top-bar-ul">
+      {% for item in site.noita.topbar.left %}
+        <li class="has-form">
+          <a href="{{ item.url }}" class="{{ site.noita.topbar.class }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  {{ content }}
+
+  <div class="row">
+    <div class="column">
+      <hr>
+    </div>
+    <div class="small-8 columns">
+      <p>© 2014–2015 <a href="http://penibelst.de/">SanDiegoDevOps</a>. Released under
+      the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+    </div>
+    <div class="small-4 columns">
+      <p class="text-right menu-icon"><a href="#topbar">&#x25B2;</a></p>
+    </div>
+  </div>
+
+  <script src="/noita/js/vendor/jquery.js"></script>
+  <script src="/noita/js/vendor/fastclick.js"></script>
+  <script src="/noita/js/foundation.min.js"></script>
+  <script>$(document).foundation();</script>
+</body>
+</html>

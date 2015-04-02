@@ -1,0 +1,34 @@
+---
+---
+
+@import "normalize";
+@import "foundation";
+
+
+/* Indigo pallete: http://www.google.com/design/spec/style/color.html#color-color-palette */
+.homepage-hero {
+background-color: #3F51B5;
+} 
+
+.homepage-hero h1{
+color:white;
+text-align: right;
+font-weight:bold;}
+.homepage-hero h3{
+padding-top:10px;
+color:white;
+font-weight:normal;}
+
+.left ul, .top-bar, .top-bar-li, .has-form, .top-bar-section{
+background:#0099CC !important;
+font-size: 1em !important;
+overflow: hidden;
+text-align: center;
+}
+
+nav.top-bar {
+text-align:center;
+}
+.top-bar-section {
+display: inline-block;
+}

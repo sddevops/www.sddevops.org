@@ -1,81 +1,20 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class='no-js'>
-  <!--<![endif]-->
-  <head>
-    <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <title>San Diego DevOps</title>
-    <meta content='' name='description'>
-    <meta content='' name='author'>
-    <meta content='width=device-width; initial-scale=1.0' name='viewport'>
-    <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/libs/modernizr-2.6.1.min.js" type="text/javascript"></script>
-  </head>
-  <body class='sddevops'>
-    <!--[if lt IE 7]>
-      <p class='chromeframe'>
-        You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.
-      </p>
-    <![endif]-->
-    <div class='container'>
-      <header>
-        <h1>San Diego DevOps</h1>
-      </header>
-      <div id='main-content' role='main'>
-        <div class='intro'>
-          <p>Whether building a web, mobile, or gaming backend, Operations is using development tools to make it work. We primarily focus on systems automation and site reliability engineering. We&#8217;re interested in the built-in facilities in Linux and the BSDs to programmatically seed and deploy. We primarily focus on Open Source solutions, but it is good to keep an eye out on the alternatives.</p>
-          
-          <p>This includes automated deployment to private cloud (eucalyptus, openstack), public cloud (amazon web services, rackspace cloud and physical hardware. We like to keep all our work in revision control (git, mercurial, subversion) and leverage tools such as Opscode Chef, Puppet, CFEngine3, Pallet to manage our system configurations. Monitoring, Seed, Deployment, High Availability, Maintenance, Security Auditing, Auto-Scaling, Load Balancing, Name Resolution, Performance Tuning, Testing, Rinse and Repeat.</p>
-          
-          <p>No recruiters please.</p>
-        </div>
-        <div class='features'>
-          <div class='events'>
-            <div id='event-data'></div>
-          </div>
-          <div class='views-layouts'>
-            <h3 id='views__layouts'>Views &amp; Layouts</h3>
-            
-            <p>Your source files are stored in the <kbd>source</kbd> folder. The main layout file for this project is <kbd>source/layout.haml</kbd>.</p>
-          </div>
-          <div class='stylesheets-sass-compass'>
-            <h3 id='stylesheets_sass__compass'>Stylesheets, Sass &#38; Compass</h3>
-            
-            <p>This project is pre-configured for <a href='http://sass-lang.com'>Sass</a> and <a href='http://compass-style.org'>Compass</a>. Store your <kbd>sass</kbd> and <kbd>scss</kbd> files in the <kbd>source/stylesheets</kbd> directory.</p>
-          </div>
-          <div class='twitter-feed'>
-             <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/SDDevOps"  data-widget-id="326518691573415936">Tweets by @SDDevOps</a>
-             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
-        </div>
-        <div class='moreinfo'>
-          <h3 id='for_more_info'>For More Info…</h3>
-          
-          <ul>
-          <li>on the Susy grid system, check out <a href='http://susy.oddbird.net/'>the official site</a>.</li>
-          </ul>
-          <img data-src="holder.js/300x200/auto/#0c0:#fff/text:I'm an image placeholder!" width="300" height="200">
-        </div>
-      </div>
-      <footer>
-        <p>&copy; 2013 Alexander van Zoest</p>
-      </footer>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
-    <script>
-      window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.9.0.min.js"><\/script>')
-    </script>
-    <script src="/javascripts/libs/holder.js" type="text/javascript"></script>
-    <script src="/javascripts/plugins.js" type="text/javascript"></script>
-    <script src="/javascripts/script.js" type="text/javascript"></script>
-    <!-- :javascript -->
-    <!-- var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; -->
-    <!-- (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; -->
-    <!-- g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js'; -->
-    <!-- s.parentNode.insertBefore(g,s)}(document,'script')); -->
-  </body>
-</html>
+---
+layout: default
+title: Innovate.<br>Automate.<br>Be Agile.
+subtitle: Devoted to continuous development in the art of delivering reliable software.
+---
+
+<div class="row">
+  <div class="columns">
+    <h2 id="blog">Upcoming Meetups</h2>
+  </div>
+  
+  <div class="medium-6 columns">
+    {% include noita/posts-short.html %}
+  </div>
+
+  <div class="medium-6 columns">
+	{% include noita/posts-short.html %}
+  </div>
+</div>
+

@@ -1,0 +1,47 @@
+# build
+markdown: kramdown
+permalink: /blog/:year/:title/
+exclude:
+  - CNAME
+  - Gemfile
+  - LICENSE
+  - Rakefile
+  - README.md
+  - vendor/
+  - vnu/
+  - vnu.zip
+layouts: ./_noita
+sass:
+  sass_dir: noita/_scss
+  style: compressed
+# compress layout in _noita/compress.html
+compress_html:
+  clippings: all
+  endings: all
+  comments: ["<!--", "-->"]
+  ignore:
+    envs: [travis]
+# theme
+noita:
+  name: San Diego DevOps
+  description: Devoted to Continuous Development in delivering reliable software
+  author:
+    name: 
+    url: http://alpha.sddevops.com/
+  lang: en
+  favicons:
+    - /assets/2014/04/21/favicon-152.png
+  topbar:
+    toggle: Menu
+    left:
+      - name: SanDiegoDevOps
+        url: /sddevops/
+      - name: About
+        url: /about/
+      - name: Meetings
+        url: /guid/
+      - name: Lead a Session
+        url: /blog/
+      - name: Repository
+        url: https://github.com/penibelst/jekyll-noita   
+    class: top-bar-li 
