@@ -18,15 +18,13 @@ function (data) {
 		}
 	}
 	
-	/*
+
 	//Check if no description
 	if (typeof next_meeting.description === "undefined"){
 	next_meeting.description = "We are putting something special together for the next meeting. Check back soon for more details.";
 	}
-	else {
-	next_meeting.description = next_meeting.description.substring(0,400)+'...';
-}
 
+    /*
 	if (typeof last_meeting.description === "undefined"){
 	last_meeting.description = "We are putting something special together for the next meeting. Check back soon for more details.";
 	}
@@ -45,11 +43,11 @@ function (data) {
 	
 	
 	//update next meeting info
-	$( "#next-meeting" ).append('<h4><a href="'+next_meeting.event_url+'">'+ next_meeting.name +'</a><medium>'
-	+nextdateString+'</medium></h4>');
+	$( "#next-meeting" ).append('<h4><a href="'+next_meeting.event_url+'">'+ next_meeting.name +'</a><br><medium class="meet-date">'
+	+nextdateString+'</medium></h4><h5>'+next_meeting.description+'</h5>');
 	
-	$( "#last-meeting" ).append('<h4><a href="'+last_meeting.event_url+'">'+ last_meeting.name +'</a><medium>'
-	+lastdateString+'</medium></h4>');
+	$( "#last-meeting" ).append('<h4><a href="'+last_meeting.event_url+'">'+ last_meeting.name +'</a><br><medium class="meet-date">'
+	+lastdateString+'</medium></h4><h5>'+last_meeting.description+'</h5>');
 	});
 
 

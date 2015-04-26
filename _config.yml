@@ -35,13 +35,13 @@ noita:
     toggle: Menu
     left:
       - name: Meetings
-        url: /About/
+        url: /#meetings
       - name: About
-        url: /about/
+        url: /#about
       - name: Get Involved
-        url: /guid/
+        url: /#involved
       - name: Meetup Page
-        url: /blog/
+        url: http://www.meetup.com/sddevops
       - name: Repository
-        url: https://github.com/penibelst/jekyll-noita   
+        url: https://github.com/sddevops/www.sddevops.org   
     class: top-bar-li 

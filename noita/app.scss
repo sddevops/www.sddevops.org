@@ -30,6 +30,15 @@ height:60px;
 padding-left:20px !important; 
 padding-right:20px !important;
 }
+
+.has-form a:hover {
+   text-decoration: underline;
+    }
+
+.has-form a:active {
+   text-decoration: underline;
+    }
+
 nav.top-bar {
 text-align:center;
 }
@@ -42,4 +51,7 @@ margin-top:20px;
 }
 
 
-.meeting-snippet{}
+.meet-date{
+color: #797272;
+font-size: .8em; 
+}
