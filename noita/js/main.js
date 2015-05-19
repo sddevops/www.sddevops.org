@@ -1,15 +1,12 @@
 //Meetup URL getting events 1 month back and 1 month forward
-console.log("main.js is running!");
-var meetup_url= "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=sddevops&photo-host=public&time=-1m%2C1m&page=20&fields=&order=time&callback=?&status=upcoming%2Cpast&desc=desc&sig_id=183763164&sig=b3f9397254be253a1056a5309028d2755a9a1bec";
+var meetup_url= "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=sddevops&photo-host=public&time=-2m%2C2m&page=500&fields=&order=time&callback=?&status=upcoming%2Cpast&desc=desc&sig_id=183763164&sig=5dde3b8642c98e610dd6318ce66d55de754bc45b";
   
 $.getJSON(meetup_url,
 function (data) {
-	console.log(data);
-	
 	//check and assign next and past meeting object, start with newest object and iterate through.
 	
 	var next_meeting; //object
-	var current_meeting;
+	var last_meeting;
 	for (var i=0; i<data.results.length; i++){
 		if (data.results[i].status.indexOf("past") !=-1){	
 		next_meeting = data.results[i-1];
@@ -43,11 +40,11 @@ function (data) {
 	
 	
 	//update next meeting info
-	$( "#next-meeting" ).append('<h4><a href="'+next_meeting.event_url+'">'+ next_meeting.name +'</a><br><medium class="meet-date">'
-	+nextdateString+'</medium></h4><h5>'+next_meeting.description+'</h5>');
+	$( "#next-meeting" ).append('<h3><a href="'+next_meeting.event_url+'">'+ next_meeting.name +'</a><br><medium class="meet-date">'
+	+nextdateString+'</medium></h3><p>'+next_meeting.description+'</p>');
 	
-	$( "#last-meeting" ).append('<h4><a href="'+last_meeting.event_url+'">'+ last_meeting.name +'</a><br><medium class="meet-date">'
-	+lastdateString+'</medium></h4><h5>'+last_meeting.description+'</h5>');
+	$( "#last-meeting" ).append('<h3><a href="'+last_meeting.event_url+'">'+ last_meeting.name +'</a><br><medium class="meet-date">'
+	+lastdateString+'</medium></h3><p>'+last_meeting.description+'</p>');
 	});
 
 
