@@ -30,18 +30,18 @@ noita:
     url: http://alpha.sddevops.com/
   lang: en
   favicons:
-    - /assets/2014/04/21/favicon-152.png
+    - /assets/2014/04/21/favicon.ico
   topbar:
     toggle: Menu
     left:
-      - name: SanDiegoDevOps
-        url: /sddevops/
-      - name: About
-        url: /about/
       - name: Meetings
-        url: /guid/
-      - name: Lead a Session
-        url: /blog/
+        url: /#meetings
+      - name: About
+        url: /#about
+      - name: Get Involved
+        url: /#involved
+      - name: Meetup Page
+        url: http://www.meetup.com/sddevops
       - name: Repository
-        url: https://github.com/penibelst/jekyll-noita   
+        url: https://github.com/sddevops/www.sddevops.org   
     class: top-bar-li 

@@ -21,14 +21,37 @@ font-weight:normal;}
 
 .left ul, .top-bar, .top-bar-li, .has-form, .top-bar-section{
 background:#0099CC !important;
-font-size: 1em !important;
-overflow: hidden;
+font-size: 1.1em !important;
 text-align: center;
+height:60px;
 }
+
+.has-form{
+padding-left:20px !important; 
+padding-right:20px !important;
+}
+
+.has-form a:hover {
+   text-decoration: underline;
+    }
+
+.has-form a:active {
+   text-decoration: underline;
+    }
 
 nav.top-bar {
 text-align:center;
 }
 .top-bar-section {
 display: inline-block;
+}
+
+.title-line{
+margin-top:20px;
+}
+
+
+.meet-date{
+color: #797272;
+font-size: .8em; 
 }
