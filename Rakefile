@@ -20,12 +20,12 @@ task :proof => BUILD_DIR do
   HTML::Proofer.new(BUILD_DIR).run
 end
 
-VALIDATOR = "vnu/vnu.jar"
+VALIDATOR = "dist/vnu.jar"
 file VALIDATOR do |f|
-  sh "wget -O vnu.zip https://github.com/validator/validator/releases/download/20141006/vnu-20141013.jar.zip"
+  sh "curl -Lo vnu.zip https://github.com/validator/validator/releases/download/16.3.3/vnu.jar_16.3.3.zip"
   sh "unzip vnu.zip #{f.name}"
 end
 
 task :validate => [BUILD_DIR, VALIDATOR] do
-  sh "java -jar #{File.join(".", VALIDATOR)} #{BUILD_DIR}"
+  sh "java -jar #{File.join(".", VALIDATOR)} --skip-non-html #{BUILD_DIR}"
 end

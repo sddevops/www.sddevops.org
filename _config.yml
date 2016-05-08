@@ -10,7 +10,7 @@ exclude:
   - vendor/
   - vnu/
   - vnu.zip
-layouts: ./_noita
+layouts_dir: ./_noita
 sass:
   sass_dir: noita/_scss
   style: compressed
@@ -27,7 +27,7 @@ noita:
   description: Devoted to Continuous Development in delivering reliable software
   author:
     name: 
-    url: http://alpha.sddevops.com/
+    url: http://www.sddevops.org/
   lang: en
   favicons:
     - /assets/2014/04/21/favicon.ico
@@ -40,8 +40,10 @@ noita:
         url: /#about
       - name: Get Involved
         url: /#involved
-      - name: Meetup Page
-        url: http://www.meetup.com/sddevops
+      - name: Slides
+        url: https://github.com/sddevops/presentations
       - name: Repository
         url: https://github.com/sddevops/www.sddevops.org   
+      - name: Meetup 
+        url: http://www.meetup.com/sddevops
     class: top-bar-li 

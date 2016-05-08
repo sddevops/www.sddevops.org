@@ -1,1 +1,5 @@
 _site/
+dist/
+.sass-cache/
+vnu.zip
+Gemfile.lock
