@@ -1,6 +1,8 @@
 # build
 markdown: kramdown
 permalink: /blog/:year/:title/
+gems:
+  - jekyll-redirect-from
 exclude:
   - CNAME
   - Gemfile
