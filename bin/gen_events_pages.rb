@@ -6,7 +6,7 @@ require 'json'
  
 outdir = __dir__ + "/../"
 base = 'http://www.meetup.com/sddevops/'
-url = 'https://api.meetup.com/sddevops/events?desc=desc&photo-host=secure&page=500&sig_id=8736384&status=past&sig=4a913cedbbe925283af8c4e1635571e468b922a7'
+url = 'https://api.meetup.com/sddevops/events?desc=desc&photo-host=secure&page=500&sig_id=8736384&status=past%2Cupcoming&sig=e06c2cf10244efeccff7dc85611bfa7936fc6c19'
 response = Net::HTTP.get(URI(url))
 
 parsed = JSON.parse(response)
