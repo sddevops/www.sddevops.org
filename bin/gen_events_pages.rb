@@ -18,7 +18,7 @@ parsed.each do |event|
   FileUtils.mkdir_p(dir, verbose: true)
   template = <<"EOS";
 ---
-title: #{event['name']}
+title: "#{event['name']}"
 redirect_to:
   - #{event['link']}
 ---
