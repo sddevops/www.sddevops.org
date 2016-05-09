@@ -36,14 +36,12 @@ noita:
   topbar:
     toggle: Menu
     left:
-      - name: Meetings
-        url: /#meetings
       - name: About
         url: /#about
-      - name: Get Involved
-        url: /#involved
+      - name: Meetings
+        url: /#meetings
       - name: Slides
         url: https://github.com/sddevops/presentations
-      - name: Meetup 
-        url: http://www.meetup.com/sddevops
+      - name: Get Involved
+        url: /#involved
     class: top-bar-li 
