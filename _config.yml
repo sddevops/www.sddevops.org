@@ -44,8 +44,6 @@ noita:
         url: /#involved
       - name: Slides
         url: https://github.com/sddevops/presentations
-      - name: Repository
-        url: https://github.com/sddevops/www.sddevops.org   
       - name: Meetup 
         url: http://www.meetup.com/sddevops
     class: top-bar-li 
