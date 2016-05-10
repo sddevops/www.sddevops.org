@@ -26,20 +26,21 @@ layout: compress
 
   <link rel="stylesheet" href="/noita/app.css">
   <script src="/noita/js/vendor/modernizr.js"></script>
+  <script src="https://use.fontawesome.com/88ff6d73d6.js"></script>
 </head>
 <body>
       
 <section class="homepage-hero">
 	<div class="row">   
-	 	<div class="medium-7 large-6 columns">
-			<br>
-			<h1 class="right">{{ page.title }}</h1><br>
-			<h3 class="right">{{ page.subtitle }}</h3>
-			<br>
-		</div>
-	<div class="medium-5 large-6 columns">
-		<img src="assets/heroimage.jpeg"  style="width: 315px;">
-		</div>
+	   <div class="medium-7 large-6 columns">
+		<br>
+		<h1 class="right">{{ page.title }}</h1><br>
+		<h3 class="right">{{ page.subtitle }}</h3>
+		<br>
+	   </div>
+           <div class="medium-5 large-6 columns">
+	     <img src="assets/heroimage.jpeg"  style="width: 315px;">
+           </div>
 	</div>
         <div><a href="https://github.com/sddevops/www.sddevops.org/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
         </div>
@@ -47,7 +48,6 @@ layout: compress
      
 
   <div class="top-bar data-topbar" id="topbar">
-  
     <div class="top-bar-section">
 
       {% if site.noita.topbar.left %}
@@ -69,8 +69,12 @@ layout: compress
       <hr>
     </div>
     <div class="small-8 columns">
-      <p>© 2012–2016 <a href="http://www.meetup.com/sddevops/">San Diego DevOps</a>. Released under
-      the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+      <p>
+      <a href="https://twitter.com/sddevops"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="https://www.linkedin.com/groups/4736135"><i class="fa fa-linkedin fa-2x"></i></a>
+      <a href="http://slacksignup.sddevops.org"><i class="fa fa-slack fa-2x"></i></a>
+      <a href="https://github.com/sddevops"><i class="fa fa-github fa-2x"></i></a>
+      © 2012–2016 <a href="http://www.meetup.com/sddevops/">San Diego DevOps</a>. Released under the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
     </div>
     <div class="small-4 columns">
       <p class="text-right menu-icon"><a href="#topbar">&#x25B2;</a></p>
