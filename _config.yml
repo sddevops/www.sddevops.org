@@ -29,7 +29,7 @@ noita:
   description: Devoted to Continuous Development in delivering reliable software
   author:
     name: 
-    url: http://www.sddevops.org/
+    url: https://www.sddevops.org/
   lang: en
   favicons:
     - /assets/2014/04/21/favicon.ico
@@ -41,7 +41,7 @@ noita:
       - name: Meetings
         url: /#meetings
       - name: Slides
-        url: https://github.com/sddevops/presentations
+        url: https://github.com/sddevops/presentations#readme
       - name: Get Involved
         url: /#involved
     class: top-bar-li 
