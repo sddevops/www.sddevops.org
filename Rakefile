@@ -22,8 +22,8 @@ end
 
 VALIDATOR = "dist/vnu.jar"
 file VALIDATOR do |f|
-  sh "curl -Lo vnu.zip https://github.com/validator/validator/releases/download/16.3.3/vnu.jar_16.3.3.zip"
-  sh "unzip vnu.zip #{f.name}"
+  sh "mkdir -p #{File.dirname(f.name)}"
+  sh "curl -Lo #{f.name} https://github.com/validator/validator/releases/download/latest/vnu.jar"
 end
 
 task :validate => [BUILD_DIR, VALIDATOR] do
