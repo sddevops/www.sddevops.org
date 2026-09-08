@@ -1,0 +1,24 @@
+ja:
+  today: '今日'
+  yesterday: '昨日'
+  tomorrow: '明日'
+  past: '%{date_range}前'
+  future: '%{date_range}後'
+  last_word_connector: ''
+  words_connector: ''
+  years:
+    one: '1年'
+    other: '%{count}年'
+  years_short: '%{count}年'
+  months:
+    one: '1ヶ月'
+    other: '%{count}ヵ月'
+  months_short: '%{count}月'
+  weeks:
+    one: '1週間'
+    other: '%{count}週間'
+  weeks_short: '%{count}週'
+  days:
+    one: '1日'
+    other: '%{count}日'
+  days_short: '%{count}日'

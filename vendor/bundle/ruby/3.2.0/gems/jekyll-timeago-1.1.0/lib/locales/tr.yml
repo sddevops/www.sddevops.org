@@ -1,0 +1,24 @@
+tr:
+  today: 'bugün'
+  yesterday: 'dün'
+  tomorrow: 'yarın'
+  past: '%{date_range} önce'
+  future: '%{date_range} içinde'
+  last_word_connector: ', '
+  words_connector: ', '
+  years:
+    one: '1 yıl'
+    other: '%{count} yıl'
+  years_short: '%{count}y'
+  months:
+    one: '1 ay'
+    other: '%{count} ay'
+  months_short: '%{count}a'
+  weeks:
+    one: '1 hafta'
+    other: '%{count} hafta'
+  weeks_short: '%{count}h'
+  days:
+    one: '1 gün'
+    other: '%{count} gün'
+  days_short: '%{count}g'

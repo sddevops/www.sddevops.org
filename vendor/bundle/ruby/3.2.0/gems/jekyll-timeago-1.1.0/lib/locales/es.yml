@@ -1,0 +1,24 @@
+es:
+  today: 'hoy'
+  yesterday: 'ayer'
+  tomorrow: 'mañana'
+  past: 'hace %{date_range}'
+  future: 'en %{date_range}'
+  last_word_connector: 'y'
+  words_connector: ', '
+  years:
+    one: '1 año'
+    other: '%{count} años'
+  years_short: '%{count}a'
+  months:
+    one: '1 mes'
+    other: '%{count} meses'
+  months_short: '%{count}m'
+  weeks:
+    one: '1 semana'
+    other: '%{count} semanas'
+  weeks_short: '%{count}s'
+  days:
+    one: '1 día'
+    other: '%{count} días'
+  days_short: '%{count}d'

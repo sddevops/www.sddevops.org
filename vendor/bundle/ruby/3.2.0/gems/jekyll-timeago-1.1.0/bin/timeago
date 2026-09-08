@@ -1,0 +1,74 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/jekyll-timeago"
+require "optparse"
+
+options = {}
+show_help = false
+show_version = false
+start_console = false
+
+parser = OptionParser.new do |opts|
+  opts.banner = <<~HELP_MESSAGE
+    Usage:
+
+        timeago <from_date> [to_date]
+
+    Notes:
+        [to_date] Optional, defaults to current date
+
+    Options:
+  HELP_MESSAGE
+
+  opts.on("-h", "--help", "Prints this message") do
+    show_help = true
+  end
+
+  opts.on("-v", "--version", "Prints the current version") do
+    show_version = true
+  end
+
+  opts.on("-c", "--console", "Starts an interactive IRB session with jekyll-timeago included") do
+    start_console = true
+  end
+
+  opts.on("-l", "--locale LOCALE", "Uses the provided locale") do |locale|
+    options[:locale] = locale
+  end
+
+  opts.on("-s", "--style STYLE", "Uses the provided style (short, array, hash)") do |style|
+    options[:style] = style
+  end
+
+  opts.on("-o", "--only UNIT", "Accumulates time in specified unit (years, months, weeks, days)") do |unit|
+    options[:only] = unit
+  end
+end
+
+begin
+  parser.parse!
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument => e
+  puts "Error! #{e}"
+  puts parser
+  exit 1
+end
+
+if show_help
+  puts parser
+elsif show_version
+  puts "v#{Jekyll::Timeago::VERSION}"
+elsif start_console
+  require "irb"
+  include Jekyll::Timeago
+  IRB.start
+elsif ARGV.empty?
+  puts parser
+else
+  ARGV << options if !options.empty?
+
+  begin
+    puts Jekyll::Timeago.timeago *ARGV
+  rescue ArgumentError => e
+    puts "Error! #{e}"
+  end
+end
